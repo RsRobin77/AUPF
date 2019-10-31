@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -18,15 +17,15 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        ImageView carnivalLogo = findViewById(R.id.carnivalLogo);
+        ImageView aupfLogo = findViewById(R.id.aupfLogo);
 
-        Glide.with(this).load(R.drawable.ict_carnival_logo).into(carnivalLogo);
+        Glide.with(this).load(R.drawable.aupf_logo).into(aupfLogo);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                startActivity(new Intent(SplashScreen.this,HomeActivity.class));
+                startActivity(new Intent(SplashScreen.this, HomeActivity.class));
                 finish();
 
             }

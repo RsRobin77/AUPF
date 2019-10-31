@@ -89,7 +89,7 @@ public class TimerUpComingFragment extends Fragment {
         // start time
         String oldTime = currentDate + ", " + currentTime;
         //End time
-        String NewTime = "26.10.2019, 07:0:00";
+        String NewTime = "22.11.2019, 10:0:00";
 
         Date oldDate, newDate;
         try {

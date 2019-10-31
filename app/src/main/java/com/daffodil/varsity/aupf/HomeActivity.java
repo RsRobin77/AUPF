@@ -27,7 +27,7 @@ import com.daffodil.varsity.aupf.fragment.SocialSite;
 import com.daffodil.varsity.aupf.fragment.TimerUpComingFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapPicture;
-import com.daffodil.varsity.aupf.ui.fragment.About;
+import com.daffodil.varsity.aupf.fragment.About;
 import com.daffodil.varsity.aupf.ui.fragment.ContactUs;
 import com.daffodil.varsity.aupf.ui.fragment.DailyEvents;
 import com.daffodil.varsity.aupf.ui.fragment.EventSegment;

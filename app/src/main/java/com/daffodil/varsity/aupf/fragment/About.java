@@ -1,4 +1,4 @@
-package com.daffodil.varsity.aupf.ui.fragment;
+package com.daffodil.varsity.aupf.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -24,8 +24,8 @@ public class About extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_about, container, false);
 
-        ImageView carnivalLogo = view.findViewById(R.id.carnival_logo_about);
-        Glide.with(this).load(R.drawable.ict_carnival_logo).into(carnivalLogo);
+        ImageView Logo = view.findViewById(R.id.logo_about);
+        Glide.with(this).load(R.drawable.aupf_logo).into(Logo);
 
         return view;
     }
