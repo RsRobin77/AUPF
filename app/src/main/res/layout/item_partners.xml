@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="8dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/row_partnersC_Logo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:id="@+id/row_partnersC_Name"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
