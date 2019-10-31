@@ -22,12 +22,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
+import com.daffodil.varsity.aupf.fragment.About;
 import com.daffodil.varsity.aupf.fragment.GalleryFragment;
 import com.daffodil.varsity.aupf.fragment.SocialSite;
 import com.daffodil.varsity.aupf.fragment.TimerUpComingFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapPicture;
-import com.daffodil.varsity.aupf.fragment.About;
 import com.daffodil.varsity.aupf.ui.fragment.ContactUs;
 import com.daffodil.varsity.aupf.ui.fragment.DailyEvents;
 import com.daffodil.varsity.aupf.ui.fragment.EventSegment;
@@ -46,6 +46,10 @@ import com.google.android.material.navigation.NavigationView;
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         BottomNavigationView.OnNavigationItemSelectedListener {
+
+    private static final String AUPF_HOME = "home";
+
+    private static String ACTIVE_FRAGMENT = "";
 
     boolean doubleBackToExitPressedOnce = false;
     private View background;
@@ -96,7 +100,10 @@ public class HomeActivity extends AppCompatActivity
                 });
             }
 
-            openFragment(new TimerUpComingFragment(), R.id.container);
+            openFragment(new TimerUpComingFragment(), "aupf_home");
+            if (getSupportActionBar() != null)
+                getSupportActionBar().setTitle("AUPF");
+            ACTIVE_FRAGMENT = "aupf_home";
 
         }
 
@@ -123,20 +130,24 @@ public class HomeActivity extends AppCompatActivity
     }
 
     // Open Fragment
-    private void openFragment(Fragment fragment, int container) {
+    private void openFragment(Fragment fragment, String container) {
 
-        FrameLayout layout = findViewById(R.id.container);
-        layout.removeAllViews();
+        if (!ACTIVE_FRAGMENT.equals(container)) {
+            ACTIVE_FRAGMENT = String.valueOf(container);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
+            FrameLayout layout = findViewById(R.id.container);
+            layout.removeAllViews();
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
+            FragmentManager fragmentManager = getSupportFragmentManager();
 
-        transaction.setCustomAnimations(R.anim.enter_from_bottom, R.anim.exit_to_top);
-        transaction.disallowAddToBackStack(); //to remove back fragment
-        transaction.replace(container,
-                fragment).commit();
-        fragmentManager.executePendingTransactions();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+            transaction.setCustomAnimations(R.anim.enter_from_bottom, R.anim.exit_to_top);
+            transaction.disallowAddToBackStack(); //to remove back fragment
+            transaction.replace(R.id.container,
+                    fragment).commit();
+            fragmentManager.executePendingTransactions();
+        }
     }
 
 
@@ -147,7 +158,7 @@ public class HomeActivity extends AppCompatActivity
             if (getSupportActionBar() != null)
                 getSupportActionBar().setTitle("Schedule & Rundown");
 
-            openFragment(new DailyEvents(), R.id.container);
+            openFragment(new DailyEvents(), "daily_event");
         } else {
             switch (item.getItemId()) {
 
@@ -156,9 +167,9 @@ public class HomeActivity extends AppCompatActivity
                 case R.id.nav_about:
 
                     if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("ICT Carnival");
+                        getSupportActionBar().setTitle("AUPF");
 
-                    openFragment(new About(), R.id.container);
+                    openFragment(new About(), "about");
 
                     break;
 
@@ -167,23 +178,23 @@ public class HomeActivity extends AppCompatActivity
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Event Segment");
 
-                    openFragment(new EventSegment(), R.id.container);
+                    openFragment(new EventSegment(), "event_segment");
 
                     break;
 
-
-                case R.id.nav_venue_map:
-                    if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Venue Map");
-
-                    openFragment(new VenueMapPicture(), R.id.container);
-                    break;
+//
+//                case R.id.nav_venue_map:
+//                    if (getSupportActionBar() != null)
+//                        getSupportActionBar().setTitle("Venue Map");
+//
+//                    openFragment(new VenueMapPicture(), "venue_map");
+//                    break;
 
                 case R.id.nav_organizers:
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Organized By");
 
-                    openFragment(new Organizers(), R.id.container);
+                    openFragment(new Organizers(), "organizers");
                     break;
 
 
@@ -191,31 +202,31 @@ public class HomeActivity extends AppCompatActivity
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Volunteers");
 
-                    openFragment(new Volunteer(), R.id.container);
+                    openFragment(new Volunteer(), "volunteer");
                     break;
 
                 case R.id.nav_gallery:
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Gallery");
 
-                    openFragment(new GalleryFragment(), R.id.container);
+                    openFragment(new GalleryFragment(), "gallery");
                     break;
 
                 case R.id.nav_social_media:
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Website and Social Media");
 
-                    openFragment(new SocialSite(), R.id.container);
+                    openFragment(new SocialSite(), "social_media");
                     break;
 
-
-                case R.id.nav_contact_us:
-                    if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Contact US");
-
-                    openFragment(new ContactUs(), R.id.container);
-                    break;
-
+//
+//                case R.id.nav_contact_us:
+//                    if (getSupportActionBar() != null)
+//                        getSupportActionBar().setTitle("Contact US");
+//
+//                    openFragment(new ContactUs(), "contact_us");
+//                    break;
+//
 
                 /**Navigation drawer item segment ends here..*/
 
@@ -223,10 +234,10 @@ public class HomeActivity extends AppCompatActivity
 
                 case R.id.bottom_nav_dashboard:
                     if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Dashboard");
+                        getSupportActionBar().setTitle("AUPF");
 
                     //Open CountDown Timer
-                    openFragment(new TimerUpComingFragment(), R.id.container);
+                    openFragment(new TimerUpComingFragment(), "aupf_home");
 
                     break;
 
@@ -235,14 +246,14 @@ public class HomeActivity extends AppCompatActivity
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Venue Map");
 
-                    openFragment(new VenueMapFragment(), R.id.container);
+                    openFragment(new VenueMapFragment(), "map");
                     break;
 
                 case R.id.bottom_nav_contact_us:
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Contact");
 
-                    openFragment(new ContactUs(), R.id.container);
+                    openFragment(new ContactUs(), "contact_us");
                     break;
 
                 /**bottom navigation item segment ends here*/

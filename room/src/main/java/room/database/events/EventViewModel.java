@@ -22,8 +22,8 @@ public class EventViewModel extends AndroidViewModel {
         repository.insert(dailyEvent);
     }
 
-    public LiveData<List<DailyEvent>> getAllEvents() {
-        return repository.getDailyEvents();
+    public LiveData<List<DailyEvent>> getAllEvents(String day) {
+        return repository.getDailyEvents(day);
     }
 
     public void deleteAll() {

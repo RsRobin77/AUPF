@@ -2,6 +2,7 @@ package com.daffodil.varsity.aupf.fragment;
 
 
 import android.annotation.SuppressLint;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
@@ -9,9 +10,15 @@ import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
@@ -31,6 +38,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class TimerUpComingFragment extends Fragment {
 
+    //End time
+    private static final String EVENT_START_TIME = "22.11.2019, 10:0:00";
     private View view;
     private MyCount counter;
     private TextView day, hours, minutes, seconds;
@@ -41,6 +50,8 @@ public class TimerUpComingFragment extends Fragment {
     private ConstraintLayout LayoutHours;
     private ConstraintLayout LayoutMin;
     private ConstraintLayout LayoutSec;
+
+    private WebView webView;
 
     public TimerUpComingFragment() {
         // Required empty public constructor
@@ -88,15 +99,14 @@ public class TimerUpComingFragment extends Fragment {
 
         // start time
         String oldTime = currentDate + ", " + currentTime;
-        //End time
-        String NewTime = "22.11.2019, 10:0:00";
 
         Date oldDate, newDate;
         try {
             oldDate = formatter.parse(oldTime);
-            newDate = formatter.parse(NewTime);
+            newDate = formatter.parse(EVENT_START_TIME);
             oldLong = oldDate.getTime();
             NewLong = newDate.getTime();
+
             //Interval Time
             diff = NewLong - oldLong;
         } catch (ParseException e) {
@@ -106,7 +116,7 @@ public class TimerUpComingFragment extends Fragment {
         counter.start();
 
         ImageView carnivalLogo = view.findViewById(R.id.carnival_logo_home);
-        Glide.with(this).load(R.drawable.carnival_logo_2019).into(carnivalLogo);
+        Glide.with(this).load(R.drawable.aupf_logo).into(carnivalLogo);
 
         ImageView carnivalGroupPhoto = view.findViewById(R.id.carnival_group_photo);
         Glide.with(this).load(R.drawable.carnival_group_photo).optionalCenterCrop().into(carnivalGroupPhoto);
@@ -114,6 +124,51 @@ public class TimerUpComingFragment extends Fragment {
 
         return view;
     }
+
+    @SuppressLint("SetJavaScriptEnabled")
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        webView = view.findViewById(R.id.webView);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("http://aupf2019.daffodil.university/");
+        webView.saveWebArchive("");
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        webView.setWebChromeClient(new WebChromeClient(){
+
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+                super.onProgressChanged(view, newProgress);
+            }
+
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                super.onReceivedTitle(view, title);
+//                progressBar.setVisibility(View.GONE);
+
+            }
+
+            @Override
+            public void onReceivedIcon(WebView view, Bitmap icon) {
+                super.onReceivedIcon(view, icon);
+//                progressBar.setVisibility(View.GONE);
+
+
+            }
+        });
+    }
+
+    /*@Override
+    public void onBackPressed() {
+        if (webView.canGoBack()){
+            webView.goBack();
+        }else {
+            super.onBackPressed();
+        }
+    }*/
 
     @Override
     public void onStart() {

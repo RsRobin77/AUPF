@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/about"
-            android:title="About ICT Carnival" />
+            android:title="About AUPF" />
 
         <item
             android:id="@+id/nav_rundown_and_schedule"
@@ -16,11 +16,6 @@
             android:id="@+id/nav_event_segment"
             android:icon="@drawable/ic_event"
             android:title="Event Segment" />
-
-        <item
-            android:id="@+id/nav_venue_map"
-            android:icon="@drawable/venue_map"
-            android:title="Venue Map" />
 
         <item
             android:id="@+id/nav_organizers"
@@ -41,12 +36,6 @@
             android:id="@+id/nav_social_media"
             android:icon="@drawable/ic_social_media"
             android:title="Website and Social Media" />
-
-        <item
-            android:id="@+id/nav_contact_us"
-            android:icon="@drawable/about"
-            android:title="Contact US" />
-
 
     </group>
 </menu>

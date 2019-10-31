@@ -44,143 +44,25 @@ class ContactUs : Fragment() {
     init {
 
         listOfContact.add(ContactAdmin(
-                R.drawable.nazim1,
-                "Mr. Najim Uddin Sharker",
-                "Deputy Director (P&D)",
-                "najim@daffodilvarsity.edu.bd",
-                "Cell: +8801713493040, " +
-                        "Daffodil Tower\n" +
-                        "Assigned for- Venue Decoration\n")
+                0,
+                "Professor Dr. Md. Fokhray Hossain",
+                "Director of International Affairs, Daffodil International University",
+                "international@daffodilvarsity.edu.bd\n" +
+                        "aupf2019@daffodil.university\n" +
+                        "secretariat.aupf2019@daffodil.university",
+                "Cell : +8801713493250")
         )
         listOfContact.add(ContactAdmin(
-                R.drawable.mizi,
-                "Mr. Md. Ishaque Mijee",
-                "Deputy Registrar",
-                "ishaque@daffodilvarsity.edu.bd",
-                "Cell: +8801811458872\n" +
-                        " Permanent Campus\n" +
-                        "Assigned for- Venue Decoration & Overall Coordination")
+                1,
+                "Mr. Syed Raihan-Ul-Islam",
+                "Assistant Director\n" +
+                        "International Affairs\n" +
+                        "Daffodil International University\n",
+                "int@daffodilvarsity.edu.bd\n" +
+                        "aupf2019@daffodil.university\n",
+                "Cell: +8801811458865\n" +
+                        "WhatsApp: +88-01920012744\n")
         )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.moslehuddin,
-                "Mr. Md. Moslehuddin Chowdhury\n",
-                "Deputy Director (P&D)",
-                "moslehuddin@daffodilvarsity.edu.bd\n",
-                "Cell: +01847140131\n" +
-                        "Permanent Campus\n" +
-                        "Assigned for- Venue Decoration & Food\n")
-        )
-        listOfContact.add(ContactAdmin(
-                R.drawable.arman,
-                "Major Md. Arman Ali Bhuiyan (Retd)\n",
-                "Project Director, Development",
-                "arman.pd@daffodilvarsity.edu.bd",
-                "Cell: +8801847140099\n" +
-                        "Permanent Campus\n" +
-                        "Assigned for- Power Management & Support")
-        )
-        listOfContact.add(ContactAdmin(
-                R.drawable.admin_avatar_ansary,
-                "Mr. Ahemed Shamim Ansary\n",
-                "Senior Assistant Director & SA to Chairman, BoT",
-                "ps.chairman@daffodilvarsity.edu.bd",
-                "Cell: +8801713493087   Ext: 223\n" +
-                        "Daffodil Tower-04 (Main Campus)\n" +
-                        "Assigned for- Overall Coordination\n")
-        )
-        listOfContact.add(ContactAdmin(
-                R.drawable.diljeb_kabir_n,
-                "Mr. Kazi Md. Diljeb Kabir",
-                "Senior Assistant Director",
-                "diljeb@daffodilvarsity.edu.bd",
-                "diljeb@daffodilvarsity.edu.bd\n" +
-                        "Cell: +8801713493104\n" +
-                        "Permanent Campus\n" +
-                        "Assigned for- Transport & Overall Coordination"
-        )
-        )
-        listOfContact.add(ContactAdmin(
-                R.drawable.awal,
-                "Mr. Md. Abdul Awal\n",
-                "Senior Assistant Registrar",
-                "abdulawal@daffodilvarsity.edu.bd",
-                "Cell: +8801811458807   Ext: 380\n" +
-                        "Daffodil Tower\n" +
-                        "Assigned for- Food\n")
-        )
-        listOfContact.add(ContactAdmin(
-                R.drawable.raiyan,
-                "Mr. Raiyan Mustafa",
-                "Senior Assistant Director (IT)",
-                "raiyan.it@daffodilvarsity.edu.bd",
-                "Cell: +8801713493056   Ext: 199\n" +
-                        "Main Campus\n" +
-                        "Assigned for- IT Support")
-        )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.farhad_alam_n,
-                "Mr. Md. Farhad Alam",
-                "Administrative Officer (Office of the Provc & Dean, FSIT)",
-                "provcoffice@daffodilvarsity.edu.bd",
-                "Cell: +8801847334770   Ext: 232\n" +
-                        "Main Campus\n" +
-                        "Assigned for- Email Circulation")
-        )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.habib,
-                "Md. Habibur Rahman",
-                "Assistant Officer",
-                "habibur@daffodilvarsity.edu.bd",
-                "Cell: +8801847140060   Ext: 140\n" +
-                        "Daffodil Tower-04 (Main Campus)\n" +
-                        "Assigned for- Budget & Overall Coordination")
-        )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.miraz,
-                "Mr. Md. Mirazul Islam",
-                "Asst. Admin officer",
-                "miraz.a@daffodilvarsity.edu.bd",
-                "Cell: +8801811458897   Ext: 105\n" +
-                        "Daffodil Tower-04\n" +
-                        "Assigned for- Overall Coordination")
-        )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.admin_umam,
-                "Mr. Md. Umam Mustain",
-                "Asst. Admin officer",
-                "umam@daffodilvarsity.edu.bd",
-                "Cell: +8801811458897   Ext: 113\n" +
-                        "Daffodil Tower-04\n" +
-                        "Assigned for- Volunteer, Communication & Overall Coordination\n" +
-                        "\n")
-        )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.zisan,
-                "Ms. Zisan Imam\n",
-                "Assistant Administrative officer",
-                "rar@daffodilvarsity.edu.bd",
-                "Cell: +8801847-334817  Ext: 223\n" +
-                        "Main Campus, Daffodil Tower-04\n" +
-                        "Assigned for- Volunteer, Communication & Overall Coordination")
-        )
-
-        listOfContact.add(ContactAdmin(
-                R.drawable.sabuj,
-                "Mr. Md. Tarekol Islam Sobuj\n",
-                "Assistant Administrative officer",
-                "cmoffice@daffodilvarsity.edu.bd",
-                "Cell: +8801847-140059   Ext: 109\n" +
-                        "Main Campus, Daffodil Tower-04\n" +
-                        "Assigned for- Transport")
-        )
-
-
     }
 
     inner class AdminContactAdapter(private val context: Context, private val listOfContact: List<ContactAdmin>) :

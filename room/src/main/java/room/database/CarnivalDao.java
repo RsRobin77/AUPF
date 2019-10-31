@@ -60,7 +60,7 @@ public interface CarnivalDao {
     @Query("DELETE FROM daily_event")
     void deleteAllEvents();
 
-    @Query("SELECT * FROM daily_event")
-    LiveData<List<DailyEvent>> getAllEvents();
+    @Query("SELECT * FROM daily_event WHERE day = :day")
+    LiveData<List<DailyEvent>> getAllEvents(String day);
 
 }

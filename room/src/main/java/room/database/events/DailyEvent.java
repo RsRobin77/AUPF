@@ -11,13 +11,16 @@ public class DailyEvent {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
+    private String day;
+
     private String startTime;
 
     private String endTime;
 
     private String event;
 
-    public DailyEvent(String startTime, String endTime, String event) {
+    public DailyEvent(String day, String startTime, String endTime, String event) {
+        this.day = day;
         this.startTime = startTime;
         this.endTime = endTime;
         this.event = event;
@@ -29,6 +32,10 @@ public class DailyEvent {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getDay() {
+        return day;
     }
 
     public String getStartTime() {

@@ -19,8 +19,8 @@ public class EventRepository {
         carnivalDao = database.carnivalDao();
     }
 
-    public LiveData<List<DailyEvent>> getDailyEvents() {
-        return carnivalDao.getAllEvents();
+    public LiveData<List<DailyEvent>> getDailyEvents(String day) {
+        return carnivalDao.getAllEvents(day);
     }
 
     public void insert(DailyEvent dailyEvent) {
