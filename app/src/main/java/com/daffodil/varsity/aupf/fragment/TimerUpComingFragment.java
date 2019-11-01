@@ -98,6 +98,10 @@ public class TimerUpComingFragment extends Fragment {
         Glide.with(this).load(R.drawable.le_meridian2)
                 .into(leMaeridian);
 
+        ImageView aupf18 = view.findViewById(R.id.aupf_18);
+        Glide.with(this).load(R.drawable.aupf18)
+                .into(aupf18);
+
     }
 
     private void initTimer() {

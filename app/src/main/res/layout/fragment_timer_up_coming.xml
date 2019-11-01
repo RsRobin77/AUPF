@@ -12,6 +12,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--TIMER SEGMENT-->
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,11 +26,11 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:src="@drawable/aupf_logo"
                     android:id="@+id/carnival_logo_home"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
+                    android:src="@drawable/aupf_logo"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -193,149 +195,219 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
+        <!--ABOUT PROGRAM SEGMENT-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/colorDivider" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp">
+            android:orientation="vertical"
+            android:padding="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_round_corner"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="About AUPF"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView7"
-                    style="@style/TextAppearance.MaterialComponents.Headline6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/shape_round_corner"
-                    android:gravity="center"
-                    android:paddingStart="16dp"
-                    android:paddingTop="8dp"
-                    android:paddingEnd="16dp"
-                    android:paddingBottom="8dp"
-                    android:text="About AUPF"
-                    android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="parent" />
+            <ImageView
+                android:id="@+id/aupf_18"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
 
-                <TextView
-                    android:id="@+id/home_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/home_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:autoLink="web"
+                android:hyphenationFrequency="full"
+                android:text="@string/about_aupf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        </LinearLayout>
+
+        <!--CONFERENCE THEME AND SUB THEME-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/colorDivider" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/shape_round_corner"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Conference theme &amp; sub theme"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Theme" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Future of Entrepreneurship Education and Experiential Learning: Determinants of Developing Successful Entrepreneurial Eco-System in Asian Economies." />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Sub Theme" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="1. Entrepreneurial Education and Experiential Learning: Asian Context\n
+2. Entrepreneurial Education and Fourth Industrial Revolution (IR 4.0) in Asian Countries\n
+3. Road-map for Enterprise and Entrepreneurship Education\n
+4. Future Teaching Learning Method: From Entrepreneurial Education point of view\n
+5. Alternative Fund for the Growth of emerging Entrepreneurs." />
+
+
+        <!--KEY NOTE SPEAKER SEGMENT-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/colorDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_round_corner"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="Keynote Speaker"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginRight="8dp"
-                    android:autoLink="web"
-                    android:hyphenationFrequency="full"
-                    android:text="@string/about_aupf"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/carnival_group_photo"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <TextView
-                    style="@style/TextAppearance.MaterialComponents.Headline6"
-                    android:layout_width="match_parent"
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/shape_round_corner"
-                    android:gravity="center"
-                    android:paddingStart="16dp"
+                    android:paddingLeft="16dp"
                     android:paddingTop="8dp"
-                    android:paddingEnd="16dp"
-                    android:paddingBottom="8dp"
-                    android:text="Keynote Speaker"
-                    android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary"
+                    android:paddingRight="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/avatar"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/avatar"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:src="@drawable/carnival_group_photo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <RelativeLayout
-                        android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/jury_member_name"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="16dp"
-                        android:paddingTop="8dp"
-                        android:paddingRight="8dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/avatar"
-                        app:layout_constraintTop_toTopOf="parent">
+                        android:gravity="center_vertical"
+                        android:text="BAYBARS ALTUNTAS"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                        <TextView
-                            android:id="@+id/jury_member_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:text="BAYBARS ALTUNTAS"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    <TextView
+                        android:id="@+id/jury_member_designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/jury_member_name"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="8dp"
+                        android:text="CHAIRMAN\nWORLD BUSINESS ANGELS INVESTMENT FORUM (WBAF), TURKEY" />
 
-                        <TextView
-                            android:id="@+id/jury_member_designation"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/jury_member_name"
-                            android:layout_marginTop="8dp"
-                            android:drawablePadding="8dp"
-                            android:text="CHAIRMAN\nWORLD BUSINESS ANGELS INVESTMENT FORUM (WBAF), TURKEY" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    </RelativeLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/keynote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:autoLink="web"
+                android:hyphenationFrequency="full"
+                android:text="@string/about_aupf"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-                <TextView
-                    android:id="@+id/keynote"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="8dp"
-                    android:autoLink="web"
-                    android:hyphenationFrequency="full"
-                    android:text="@string/about_aupf"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </LinearLayout>
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        <!--ABOUT THE ACCOMMODATION SEGMENT-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="@color/colorDivider" />
 
         <TextView
             style="@style/TextAppearance.MaterialComponents.Headline6"
@@ -350,7 +422,6 @@
             android:paddingBottom="8dp"
             android:text="ABOUT THE ACCOMMODATION"
             android:textAllCaps="true"
-            android:textColor="@color/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />
@@ -372,11 +443,11 @@ Radisson Blu (Official Accommodation) is a 5-star property and a premier destina
             app:layout_constraintTop_toBottomOf="parent" />
 
         <ImageView
-            android:src="@drawable/aupf_logo"
             android:id="@+id/radisson"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
+            android:src="@drawable/aupf_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -397,17 +468,16 @@ The Westin Dhaka (Right)."
             app:layout_constraintTop_toBottomOf="parent" />
 
         <ImageView
-            android:src="@drawable/aupf_logo"
             android:id="@+id/le_maeridian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitCenter"
+            android:src="@drawable/aupf_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
-
 
 
 </androidx.core.widget.NestedScrollView>

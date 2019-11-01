@@ -142,7 +142,7 @@ public class HomeActivity extends AppCompatActivity
 
             FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-            transaction.setCustomAnimations(R.anim.enter_from_bottom, R.anim.exit_to_top);
+//            transaction.setCustomAnimations(R.anim.enter_from_bottom, R.anim.exit_to_top);
             transaction.disallowAddToBackStack(); //to remove back fragment
             transaction.replace(R.id.container,
                     fragment).commit();

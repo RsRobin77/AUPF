@@ -8,6 +8,10 @@
     tools:context=".ui.fragment.tabs.EventsTab">
 
     <com.google.android.material.tabs.TabLayout
+        style="@style/Widget.Design.AppBarLayout"
+        app:tabSelectedTextColor="#fff"
+        app:tabIndicatorColor="#fff"
+        app:tabTextColor="#c3c3c3"
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
