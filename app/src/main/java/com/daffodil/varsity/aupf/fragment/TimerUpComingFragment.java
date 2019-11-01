@@ -2,7 +2,6 @@ package com.daffodil.varsity.aupf.fragment;
 
 
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
@@ -10,15 +9,10 @@ import android.os.CountDownTimer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
@@ -63,11 +57,50 @@ public class TimerUpComingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_timer_up_coming, container, false);
+//
+//        if (savedInstanceState == null) {
+//            openFragment(new SpeakerFragment());
+//        }
 
-        if (savedInstanceState == null) {
-            openFragment(new SpeakerFragment());
-        }
+        initTimer();
+        init();
 
+        ImageView carnivalLogo = view.findViewById(R.id.carnival_logo_home);
+        Glide.with(this).load(R.drawable.aupf_logo).into(carnivalLogo);
+
+        return view;
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void init() {
+        TextView textView = view.findViewById(R.id.keynote);
+
+        textView.setText("Former Senior Advisor of the London Stock Exchange " +
+                "Group (LSEG) for the Elite Program, Chairman of the World Business " +
+                "Angels Investment Forum (WBAF) – an affiliated partner of the G20 Global" +
+                " Partnership for Financial Inclusion (GPFI) chaired by the Queen Maxima " +
+                "of the Netherlands, Co-chair of the Washington DC- based Global Business" +
+                " Angels Network (GBAN), Vice President of the Brussels-based European Trade Association for Business Angels, Seed Funds, and Early Stage Market Players (EBAN), President of the Business Angels Association of Turkey (TBAA), the World Entrepreneurship Forum Ambassador to Turkey and the Balkan countries, and President of Deulcom International Inc. Star of the Turkish version of the television show Dragons’ Den / Sharks Tank. Recipient of the European Trade Association of Business Angels (EBAN) award for the Best Individual in Europe Globally Engaging with the Global Entrepreneurial Ecosystem in 2014 (Ireland), 2015 (Netherlands), 2016 (Portugal), 2017 (Spain) and 2018 (Bulgaria). The only entrepreneur to be granted a personal audience with former President Obama at the Presidential Summit on Entrepreneurship in Washington DC. Developer of the world-renowned entrepreneurship theory, the Altuntas Start-up Compass Theory, researched by Sheffield University and used in numerous MBA programs. Appointed as JCI Ambassador, following Ban Ki-moon, former Secretary General of the United Nations. Profiled regularly by leading international media such as CNN International, Bloomberg, BBC. A co-author of Planet Entrepreneur: The World Entrepreneurship Forum's Guide to Business Success Around the World, published by Wiley (2013). Author of Off the Bus, Into a Supercar! How I Became a Top TV Star and Celebrated Investor, published by Balboa Press (2014) and " +
+                "translated into Chinese, Croatian, Albanian, and Macedonian.");
+
+
+        ImageView carnivalGroupPhoto = view.findViewById(R.id.avatar);
+        Glide.with(this).load(R.drawable.baybars)
+                .optionalCenterCrop()
+                .circleCrop()
+                .into(carnivalGroupPhoto);
+
+        ImageView radisson = view.findViewById(R.id.radisson);
+        Glide.with(this).load(R.drawable.radison)
+                .into(radisson);
+
+        ImageView leMaeridian = view.findViewById(R.id.le_maeridian);
+        Glide.with(this).load(R.drawable.le_meridian2)
+                .into(leMaeridian);
+
+    }
+
+    private void initTimer() {
         day = view.findViewById(R.id.day);
         hours = view.findViewById(R.id.hours);
         minutes = view.findViewById(R.id.minutes);
@@ -114,61 +147,7 @@ public class TimerUpComingFragment extends Fragment {
         }
         counter = new MyCount(diff, 1000);
         counter.start();
-
-        ImageView carnivalLogo = view.findViewById(R.id.carnival_logo_home);
-        Glide.with(this).load(R.drawable.aupf_logo).into(carnivalLogo);
-
-        ImageView carnivalGroupPhoto = view.findViewById(R.id.carnival_group_photo);
-        Glide.with(this).load(R.drawable.carnival_group_photo).optionalCenterCrop().into(carnivalGroupPhoto);
-
-
-        return view;
     }
-
-    @SuppressLint("SetJavaScriptEnabled")
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        webView = view.findViewById(R.id.webView);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("http://aupf2019.daffodil.university/");
-        webView.saveWebArchive("");
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-
-        webView.setWebChromeClient(new WebChromeClient(){
-
-            @Override
-            public void onProgressChanged(WebView view, int newProgress) {
-                super.onProgressChanged(view, newProgress);
-            }
-
-            @Override
-            public void onReceivedTitle(WebView view, String title) {
-                super.onReceivedTitle(view, title);
-//                progressBar.setVisibility(View.GONE);
-
-            }
-
-            @Override
-            public void onReceivedIcon(WebView view, Bitmap icon) {
-                super.onReceivedIcon(view, icon);
-//                progressBar.setVisibility(View.GONE);
-
-
-            }
-        });
-    }
-
-    /*@Override
-    public void onBackPressed() {
-        if (webView.canGoBack()){
-            webView.goBack();
-        }else {
-            super.onBackPressed();
-        }
-    }*/
 
     @Override
     public void onStart() {
@@ -188,20 +167,12 @@ public class TimerUpComingFragment extends Fragment {
         }
     }
 
-
-    private void openFragment(Fragment fragment) {
-
-        getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container_speaker, fragment, "Speaker fragment")
-                .commit();
-    }
-
     private int getRandomColor() {
         Random rnd = new Random();
         return Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
     }
 
-    // countdowntimer is an abstract class, so extend it and fill in methods
+    // countdown timer is an abstract class, so extend it and fill in methods
     public class MyCount extends CountDownTimer {
         MyCount(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);

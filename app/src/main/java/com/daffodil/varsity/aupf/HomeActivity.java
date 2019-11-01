@@ -71,7 +71,7 @@ public class HomeActivity extends AppCompatActivity
         View headerView = nav.getHeaderView(0);
 
         ImageView carnivalLogo = headerView.findViewById(R.id.nav_carnival_logo);
-        Glide.with(this).load(R.drawable.ict_carnival_logo).into(carnivalLogo);
+        Glide.with(this).load(R.drawable.aupf_logo).into(carnivalLogo);
 
         /*NAVIGATION DRAWER SEGMENT*/
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -176,19 +176,12 @@ public class HomeActivity extends AppCompatActivity
                 case R.id.nav_event_segment:
 
                     if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Event Segment");
+                        getSupportActionBar().setTitle("AUPF Calender");
 
                     openFragment(new EventSegment(), "event_segment");
 
                     break;
 
-//
-//                case R.id.nav_venue_map:
-//                    if (getSupportActionBar() != null)
-//                        getSupportActionBar().setTitle("Venue Map");
-//
-//                    openFragment(new VenueMapPicture(), "venue_map");
-//                    break;
 
                 case R.id.nav_organizers:
                     if (getSupportActionBar() != null)
@@ -270,7 +263,7 @@ public class HomeActivity extends AppCompatActivity
 
         builder1.setTitle("Do you want to exit?");
         builder1.setCancelable(true);
-        builder1.setIcon(R.drawable.carnival_logo_2019);
+        builder1.setIcon(R.drawable.aupf_logo);
 
         builder1.setNegativeButton(
                 "NO",

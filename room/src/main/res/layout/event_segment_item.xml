@@ -35,27 +35,27 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/volunteer_name"
+                android:id="@+id/event_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="Building Name"
+                android:text="Event Name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
             <TextView
-                android:id="@+id/cell_number"
+                android:id="@+id/event_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/volunteer_name"
+                android:layout_below="@id/event_name"
                 android:layout_marginTop="8dp"
-                android:drawableLeft="@drawable/ic_my_location"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
                 android:drawablePadding="8dp"
-                android:text="Floor Number" />
+                android:text="Date" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_below="@id/cell_number"
+                android:layout_below="@id/event_date"
                 android:layout_marginTop="8dp"
                 android:background="#ccc" />
 

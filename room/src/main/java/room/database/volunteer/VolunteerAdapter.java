@@ -94,19 +94,16 @@ public class VolunteerAdapter extends ListAdapter<Volunteer, VolunteerAdapter.Vo
 
             view = itemView.findViewById(R.id.view);
             volunteerName = itemView.findViewById(R.id.volunteer_name);
-            cell = itemView.findViewById(R.id.cell_number);
+            cell = itemView.findViewById(R.id.cell);
             mail = itemView.findViewById(R.id.mail);
             dept = itemView.findViewById(R.id.dept);
             studentId = itemView.findViewById(R.id.student_id);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
+            itemView.setOnClickListener(v -> {
+                int position = getAdapterPosition();
 
-                    if (listener != null && position != RecyclerView.NO_POSITION)
-                        listener.onItemClick(getItem(position));
-                }
+                if (listener != null && position != RecyclerView.NO_POSITION)
+                    listener.onItemClick(getItem(position));
             });
         }
     }

@@ -37,7 +37,7 @@ public class FreshRoomAdapter extends ListAdapter<FreshRoom, FreshRoomAdapter.Fr
     @NonNull
     @Override
     public FreshRoomHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.fresh_room_item, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.event_segment_item, parent, false);
         return new FreshRoomHolder(itemView);
     }
 
@@ -72,8 +72,8 @@ public class FreshRoomAdapter extends ListAdapter<FreshRoom, FreshRoomAdapter.Fr
             super(itemView);
 
             view = itemView.findViewById(R.id.view);
-            building = itemView.findViewById(R.id.volunteer_name);
-            floor = itemView.findViewById(R.id.cell_number);
+            building = itemView.findViewById(R.id.event_name);
+            floor = itemView.findViewById(R.id.event_date);
         }
     }
 }

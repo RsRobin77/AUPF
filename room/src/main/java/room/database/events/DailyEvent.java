@@ -43,9 +43,7 @@ public class DailyEvent {
     }
 
     public String getEndTime() {
-        if (endTime.isEmpty())
-            return endTime;
-        else return " - " + endTime;
+        return endTime;
     }
 
     public String getEvent() {
