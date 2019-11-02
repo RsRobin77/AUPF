@@ -47,12 +47,8 @@
         Member of CCAP (Cross Culture Awareness Program). UNESCO (South Korea).</body></html>"</string>
     <string name="mohammad_shakhawat_hossain"><html><body>Principal,Associate Professor, <br></br>Dept of BBA
         <br></br><br></br>M.Com (Finance), MBA (Markting) DBA (In progress), DU</body></html></string>
-    <string name="content_home">Daffodil ICT Carnival has been started in 2016 to bring all the talents among the students and represent them to the industry by commercialization. Since then, the event has been held with ICT based innovation, competitions, project showcase, counseling, mentoring, cultural events, learning opportunities, networking scope and many more so that every moment of the fest can be enjoyed and utilized with adding value. In line with this, DIU is proud to introduce and be the host of this mega event in Bangladesh and also planning to organize it in an innovative, effective and broader way to bring the best outcome. For more about Daffodil ICT Carnival 2019,
-        please browse
-    <a href="https://ictcarnival.daffodil.family/">https://ictcarnival.daffodil.family</a>
-    </string>
     <string name="about_aupf">Originating from a friendly collaboration between institutions of higher education in China and Thailand, the Asian University Presidents Forum was officially established in 2002 to include higher education institutions across Asia. Since then, the forum has been held annually in different Asian countries and has fostered relationships and cooperation among participating institutions. In fact, cooperation is at the heart of the mission of the forum, whose mission is to “Increase Communication, Exchange Information, Share Experience and Seek Common Development.” Since its inception, AUPF has expanded throughout Asia and has congregated annually in different Asian countries. In line with this, DIU is proud to be the host of the forum in 2019 in Dhaka. DIU management warmly invites and welcomes participants from around the world to the 18 th Asian University Presidents’ Forum to be held in Dhaka, Bangladesh during November 22-24, 2019. This would be an incredible opportunity for the participants to interact and collaborate with other university presidents and leaders.
-        \n\nFor more about  AUPF: <a href="http://www.aupf.net/">http://www.aupf.net/</a> </string>
+        </string>
 
     <string name="k_m_hasan_ripon">K. M Hasan Ripon
 Adviser
@@ -61,6 +57,9 @@ M +88- 01713-493206 | T+88-02- 8152105
 W www.bsdi-bd.org | S kmhasan.ripon</string>
     
     <string name="rathindra_nath_das">Executive Director,  DIPTI &amp; DTI</string>
+    <string name="textlink" >
+        \nFor more about  AUPF: <a href="http://www.aupf.net/">http://www.aupf.net/</a>
+    </string>
     <string-array name="speakers_biography">
         <item>@string/sabur_khan</item>
         <item>@string/mahbubul_islam</item>

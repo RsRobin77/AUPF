@@ -17,10 +17,6 @@
             android:icon="@drawable/ic_event"
             android:title="AUPF Calender" />
 
-        <item
-            android:id="@+id/nav_organizers"
-            android:icon="@drawable/ic_team"
-            android:title="Organized By" />
 
         <item
             android:id="@+id/nav_volunteer"
@@ -29,13 +25,14 @@
 
         <item
             android:id="@+id/nav_gallery"
+            android:visible="false"
             android:icon="@drawable/ic_gallery"
             android:title="Gallery" />
 
         <item
             android:id="@+id/nav_social_media"
             android:icon="@drawable/ic_social_media"
-            android:title="Website and Social Media" />
+            android:title="Website" />
 
     </group>
 </menu>

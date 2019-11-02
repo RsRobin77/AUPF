@@ -232,7 +232,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"/>
 
-            <TextView
+            <com.borjabravo.readmoretextview.ReadMoreTextView
                 android:id="@+id/home_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -240,11 +240,20 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
                 android:autoLink="web"
+                app:trimLines="4"
+                app:trimExpandedText="show more"
+                app:trimCollapsedText="show less"
                 android:hyphenationFrequency="full"
                 android:text="@string/about_aupf"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/textlink"/>
 
         </LinearLayout>
 
@@ -265,6 +274,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
             android:paddingBottom="8dp"
+            android:gravity="center"
             android:text="Conference theme &amp; sub theme"
             android:textAllCaps="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -275,6 +285,7 @@
             style="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_margin="16dp"
             android:text="Theme" />
 
@@ -291,6 +302,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:gravity="center"
             android:text="Sub Theme" />
 
         <TextView
@@ -299,6 +311,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+
             android:text="1. Entrepreneurial Education and Experiential Learning: Asian Context\n
 2. Entrepreneurial Education and Fourth Industrial Revolution (IR 4.0) in Asian Countries\n
 3. Road-map for Enterprise and Entrepreneurship Education\n
@@ -385,7 +398,7 @@
                 </RelativeLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
+            <com.borjabravo.readmoretextview.ReadMoreTextView
                 android:id="@+id/keynote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -393,6 +406,9 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
                 android:autoLink="web"
+                app:trimLines="4"
+                app:trimExpandedText="show more"
+                app:trimCollapsedText="show less"
                 android:hyphenationFrequency="full"
                 android:text="@string/about_aupf"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -417,6 +433,7 @@
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
+            android:gravity="center"
             android:paddingBottom="8dp"
             android:text="ABOUT THE ACCOMMODATION"
             android:textAllCaps="true"

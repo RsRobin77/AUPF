@@ -2,6 +2,8 @@ package com.daffodil.varsity.aupf;
 
 import android.animation.Animator;
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -183,14 +185,6 @@ public class HomeActivity extends AppCompatActivity
                     break;
 
 
-                case R.id.nav_organizers:
-                    if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Organized By");
-
-                    openFragment(new Organizers(), "organizers");
-                    break;
-
-
                 case R.id.nav_volunteer:
                     if (getSupportActionBar() != null)
                         getSupportActionBar().setTitle("Volunteers");
@@ -199,17 +193,16 @@ public class HomeActivity extends AppCompatActivity
                     break;
 
                 case R.id.nav_gallery:
-                    if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Gallery");
 
-                    openFragment(new GalleryFragment(), "gallery");
                     break;
 
                 case R.id.nav_social_media:
-                    if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Website and Social Media");
+                    Intent intent = new Intent();
+                    intent.setAction(Intent.ACTION_VIEW);
+                    intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                    intent.setData(Uri.parse("http://aupf2019.daffodil.university/"));
+                    startActivity(intent);
 
-                    openFragment(new SocialSite(), "social_media");
                     break;
 
 //
