@@ -27,6 +27,10 @@ public class About extends Fragment {
         ImageView Logo = view.findViewById(R.id.logo_about);
         Glide.with(this).load(R.drawable.aupf_logo_large).into(Logo);
 
+        ImageView carnivalGroupPhoto = view.findViewById(R.id.image_about);
+        Glide.with(this).load(R.drawable.aupf18)
+                .into(carnivalGroupPhoto);
+
         return view;
     }
 

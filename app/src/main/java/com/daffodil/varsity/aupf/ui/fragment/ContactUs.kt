@@ -44,7 +44,7 @@ class ContactUs : Fragment() {
     init {
 
         listOfContact.add(ContactAdmin(
-                0,
+                R.drawable.fokhray1,
                 "Professor Dr. Md. Fokhray Hossain",
                 "Director of International Affairs, Daffodil International University",
                 "international@daffodilvarsity.edu.bd\n" +
@@ -53,7 +53,8 @@ class ContactUs : Fragment() {
                 "Cell : +8801713493250")
         )
         listOfContact.add(ContactAdmin(
-                1,
+                R.drawable.raihan,
+
                 "Mr. Syed Raihan-Ul-Islam",
                 "Assistant Director\n" +
                         "International Affairs\n" +

@@ -216,12 +216,14 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/shape_round_corner"
                 android:gravity="center"
+
                 android:paddingStart="16dp"
                 android:paddingTop="8dp"
                 android:paddingEnd="16dp"
                 android:paddingBottom="8dp"
                 android:text="About AUPF"
                 android:textAllCaps="true"
+                android:textColor="#fff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="parent" />
@@ -277,6 +279,7 @@
             android:paddingBottom="8dp"
             android:text="Conference theme &amp; sub theme"
             android:textAllCaps="true"
+            android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />
@@ -345,6 +348,7 @@
                 android:paddingBottom="8dp"
                 android:text="Keynote Speaker"
                 android:textAllCaps="true"
+                android:textColor="#fff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="parent" />
@@ -437,6 +441,7 @@
             android:paddingBottom="8dp"
             android:text="ABOUT THE ACCOMMODATION"
             android:textAllCaps="true"
+            android:textColor="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent" />

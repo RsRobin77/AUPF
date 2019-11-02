@@ -6,7 +6,8 @@
         android:right="1dp"
         android:top="1dp" />
 
-    <solid android:color="#40CCCCCC"/>
 
+    <gradient android:startColor="@color/colorAccent"
+        android:endColor="@color/colorHeading"/>
     <corners android:radius="30dp" />
 </shape>
