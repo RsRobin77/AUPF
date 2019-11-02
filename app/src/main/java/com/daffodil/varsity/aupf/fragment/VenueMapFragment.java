@@ -11,6 +11,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +35,8 @@ public class VenueMapFragment extends Fragment {
     GoogleMap map;
     View view;
     private WebView webView;
+    private ProgressBar progressBar;
+
 
 
 
@@ -54,6 +57,8 @@ public class VenueMapFragment extends Fragment {
 //        mapFragment.getMapAsync(this);
 
 
+        progressBar=view.findViewById(R.id.progressbar);
+        progressBar.setMax(100);
 
         return view;
     }
@@ -65,17 +70,13 @@ public class VenueMapFragment extends Fragment {
 
         webView = view.findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.google.com/url?q=" +
-                "https://drive.google.com/open?" +
-                "id%3D1Fcd0nCuGdrpEhXnFK8Mj2-WcTCHxUogO%26usp%3" +
-                "Dsharing&sa=D&source=hangouts&ust=1572418303631000&usg=AFQjCNG2_k4AwSEsqrGjmmvVIB_FmPnkJg");
+        webView.loadUrl("https://www.google.com/maps/d/u/1/embed?mid=1Fcd0nCuGdrpEhXnFK8Mj2-WcTCHxUogO");
 
         webView.saveWebArchive("");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         webView.setWebChromeClient(new WebChromeClient(){
-
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
                 super.onProgressChanged(view, newProgress);
@@ -84,14 +85,14 @@ public class VenueMapFragment extends Fragment {
             @Override
             public void onReceivedTitle(WebView view, String title) {
                 super.onReceivedTitle(view, title);
-//                progressBar.setVisibility(View.GONE);
+                progressBar.setVisibility(View.GONE);
 
             }
 
             @Override
             public void onReceivedIcon(WebView view, Bitmap icon) {
                 super.onReceivedIcon(view, icon);
-//                progressBar.setVisibility(View.GONE);
+                progressBar.setVisibility(View.GONE);
 
 
             }
