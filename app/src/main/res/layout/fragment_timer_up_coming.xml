@@ -228,9 +228,9 @@
 
             <ImageView
                 android:id="@+id/aupf_18"
-                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"/>
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp" />
 
             <com.borjabravo.readmoretextview.ReadMoreTextView
                 android:id="@+id/home_content"
@@ -240,20 +240,20 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
                 android:autoLink="web"
-                app:trimLines="4"
-                app:trimExpandedText="show more"
-                app:trimCollapsedText="show less"
                 android:hyphenationFrequency="full"
                 android:text="@string/about_aupf"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:trimCollapsedText="\t  show less"
+                app:trimExpandedText="\tshow more"
+                app:trimLines="4" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
-                android:text="@string/textlink"/>
+                android:text="@string/textlink" />
 
         </LinearLayout>
 
@@ -270,11 +270,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@drawable/shape_round_corner"
+            android:gravity="center"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
             android:paddingBottom="8dp"
-            android:gravity="center"
             android:text="Conference theme &amp; sub theme"
             android:textAllCaps="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -285,8 +285,8 @@
             style="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_margin="16dp"
+            android:gravity="center"
             android:text="Theme" />
 
         <TextView
@@ -406,14 +406,14 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="8dp"
                 android:autoLink="web"
-                app:trimLines="4"
-                app:trimExpandedText="show more"
-                app:trimCollapsedText="show less"
                 android:hyphenationFrequency="full"
                 android:text="@string/about_aupf"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:trimCollapsedText="\t  show less"
+                app:trimExpandedText="\tshow more"
+                app:trimLines="4" />
 
         </LinearLayout>
 
@@ -430,10 +430,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@drawable/shape_round_corner"
+            android:gravity="center"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:gravity="center"
             android:paddingBottom="8dp"
             android:text="ABOUT THE ACCOMMODATION"
             android:textAllCaps="true"

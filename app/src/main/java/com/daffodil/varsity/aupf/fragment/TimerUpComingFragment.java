@@ -66,7 +66,7 @@ public class TimerUpComingFragment extends Fragment {
         init();
 
         ImageView carnivalLogo = view.findViewById(R.id.carnival_logo_home);
-        Glide.with(this).load(R.drawable.aupf_logo).into(carnivalLogo);
+        Glide.with(this).load(R.drawable.aupf_logo_large).into(carnivalLogo);
 
         return view;
     }
@@ -81,7 +81,7 @@ public class TimerUpComingFragment extends Fragment {
                 " Partnership for Financial Inclusion (GPFI) chaired by the Queen Maxima " +
                 "of the Netherlands, Co-chair of the Washington DC- based Global Business" +
                 " Angels Network (GBAN), Vice President of the Brussels-based European Trade Association for Business Angels, Seed Funds, and Early Stage Market Players (EBAN), President of the Business Angels Association of Turkey (TBAA), the World Entrepreneurship Forum Ambassador to Turkey and the Balkan countries, and President of Deulcom International Inc. Star of the Turkish version of the television show Dragons’ Den / Sharks Tank. Recipient of the European Trade Association of Business Angels (EBAN) award for the Best Individual in Europe Globally Engaging with the Global Entrepreneurial Ecosystem in 2014 (Ireland), 2015 (Netherlands), 2016 (Portugal), 2017 (Spain) and 2018 (Bulgaria). The only entrepreneur to be granted a personal audience with former President Obama at the Presidential Summit on Entrepreneurship in Washington DC. Developer of the world-renowned entrepreneurship theory, the Altuntas Start-up Compass Theory, researched by Sheffield University and used in numerous MBA programs. Appointed as JCI Ambassador, following Ban Ki-moon, former Secretary General of the United Nations. Profiled regularly by leading international media such as CNN International, Bloomberg, BBC. A co-author of Planet Entrepreneur: The World Entrepreneurship Forum's Guide to Business Success Around the World, published by Wiley (2013). Author of Off the Bus, Into a Supercar! How I Became a Top TV Star and Celebrated Investor, published by Balboa Press (2014) and " +
-                "translated into Chinese, Croatian, Albanian, and Macedonian.");
+                "translated into Chinese, Croatian, Albanian, and Macedonian.\t");
 
 
         ImageView carnivalGroupPhoto = view.findViewById(R.id.avatar);

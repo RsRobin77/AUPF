@@ -25,15 +25,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.daffodil.varsity.aupf.fragment.About;
-import com.daffodil.varsity.aupf.fragment.GalleryFragment;
-import com.daffodil.varsity.aupf.fragment.SocialSite;
 import com.daffodil.varsity.aupf.fragment.TimerUpComingFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapFragment;
-import com.daffodil.varsity.aupf.fragment.VenueMapPicture;
 import com.daffodil.varsity.aupf.ui.fragment.ContactUs;
 import com.daffodil.varsity.aupf.ui.fragment.DailyEvents;
 import com.daffodil.varsity.aupf.ui.fragment.EventSegment;
-import com.daffodil.varsity.aupf.ui.fragment.Organizers;
 import com.daffodil.varsity.aupf.ui.fragment.Volunteer;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -73,7 +69,7 @@ public class HomeActivity extends AppCompatActivity
         View headerView = nav.getHeaderView(0);
 
         ImageView carnivalLogo = headerView.findViewById(R.id.nav_carnival_logo);
-        Glide.with(this).load(R.drawable.aupf_logo).into(carnivalLogo);
+        Glide.with(this).load(R.drawable.aupf_logo_large).into(carnivalLogo);
 
         /*NAVIGATION DRAWER SEGMENT*/
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -84,29 +80,35 @@ public class HomeActivity extends AppCompatActivity
         toggle.syncState();
 
         if (savedInstanceState == null) {
-            //Open CountDown Timer
-            background = drawer;
-
-            final ViewTreeObserver viewTreeObserver = background.getViewTreeObserver();
-
-            if (viewTreeObserver.isAlive()) {
-                viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-
-                    @SuppressLint("NewApi")
-                    @Override
-                    public void onGlobalLayout() {
-                        circularRevealAnimation();
-                        background.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                    }
-
-                });
-            }
 
             openFragment(new TimerUpComingFragment(), "aupf_home");
             if (getSupportActionBar() != null)
                 getSupportActionBar().setTitle("AUPF");
             ACTIVE_FRAGMENT = "aupf_home";
 
+            try {
+
+                //Open CountDown Timer
+                background = drawer;
+
+                final ViewTreeObserver viewTreeObserver = background.getViewTreeObserver();
+
+                if (viewTreeObserver.isAlive()) {
+                    viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+
+                        @SuppressLint("NewApi")
+                        @Override
+                        public void onGlobalLayout() {
+                            circularRevealAnimation();
+                            background.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                        }
+
+                    });
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
     }

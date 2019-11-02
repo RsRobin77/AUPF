@@ -25,7 +25,7 @@ public class About extends Fragment {
         View view = inflater.inflate(R.layout.fragment_about, container, false);
 
         ImageView Logo = view.findViewById(R.id.logo_about);
-        Glide.with(this).load(R.drawable.aupf_logo).into(Logo);
+        Glide.with(this).load(R.drawable.aupf_logo_large).into(Logo);
 
         return view;
     }

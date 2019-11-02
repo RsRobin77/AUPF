@@ -19,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
 
         ImageView aupfLogo = findViewById(R.id.aupfLogo);
 
-        Glide.with(this).load(R.drawable.aupf_logo).into(aupfLogo);
+        Glide.with(this).load(R.drawable.aupf_logo_large).into(aupfLogo);
 
         new Handler().postDelayed(new Runnable() {
             @Override

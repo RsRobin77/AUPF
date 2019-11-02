@@ -34,19 +34,20 @@ class Volunteer : Fragment() {
         val view = inflater.inflate(R.layout.fragment_volunteer, container, false)
 
         volunteerViewModel = ViewModelProviders.of(this).get(VolunteerViewModel::class.java)
+        volunteerViewModel.deleteAllVolunteers() //all volunteers are deleted from room
 
         volunteerViewModel.allVolunteers.observe(this, Observer {
             volunteerAdapter.submitList(it)
             recyclerView = view.findViewById(R.id.recycler_view)
+//
+//            if (it.size == 0)
+//                insert()
 
-            if (it.size == 0)
-                insert()
-
-            recyclerView.apply {
-                hasFixedSize()
-                layoutManager = LinearLayoutManager(context)
-                adapter = volunteerAdapter
-            }
+//            recyclerView.apply {
+//                hasFixedSize()
+//                layoutManager = LinearLayoutManager(context)
+//                adapter = volunteerAdapter
+//            }
         })
 
         volunteerAdapter.setOnItemClickListener {
