@@ -43,7 +43,7 @@ public class DailyEvent {
     }
 
     public String getEndTime() {
-        return endTime;
+        return " - " + endTime;
     }
 
     public String getEvent() {
