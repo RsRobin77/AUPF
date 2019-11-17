@@ -19,6 +19,7 @@
 
 
         <item
+            android:visible="false"
             android:id="@+id/nav_volunteer"
             android:icon="@drawable/ic_volunteers_list"
             android:title="Volunteers" />
