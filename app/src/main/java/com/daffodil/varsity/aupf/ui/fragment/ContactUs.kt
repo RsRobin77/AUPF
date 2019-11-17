@@ -62,7 +62,7 @@ class ContactUs : Fragment() {
                 "int@daffodilvarsity.edu.bd\n" +
                         "aupf2019@daffodil.university\n",
                 "Cell: +8801811458865\n" +
-                        "WhatsApp: +88-01920012744\n")
+                        "WhatsApp: +8801920012744\n")
         )
     }
 
