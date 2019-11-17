@@ -237,14 +237,7 @@ public class HomeActivity extends AppCompatActivity
                     openFragment(new ContactUs(), "contact_us");
                     break;
 
-//
-//                case R.id.nav_contact_us:
-//                    if (getSupportActionBar() != null)
-//                        getSupportActionBar().setTitle("Contact US");
-//
-//                    openFragment(new ContactUs(), "contact_us");
-//                    break;
-//
+
 
                 /**Navigation drawer item segment ends here..*/
 
