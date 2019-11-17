@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +16,12 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.GlideException
 import com.daffodil.varsity.aupf.R
 import com.daffodil.varsity.aupf.model.ContactAdmin
+import android.widget.Toast
+import android.content.pm.PackageManager
+import android.content.Intent
+
+import android.net.Uri
+
 
 /**
  * A simple [Fragment] subclass.
@@ -50,7 +57,7 @@ class ContactUs : Fragment() {
                 "international@daffodilvarsity.edu.bd\n" +
                         "aupf2019@daffodil.university\n" +
                         "secretariat.aupf2019@daffodil.university",
-                "Cell : +8801713493250")
+                "Cell : +8801713493250","01713493250")
         )
         listOfContact.add(ContactAdmin(
                 R.drawable.raihan,
@@ -62,7 +69,7 @@ class ContactUs : Fragment() {
                 "int@daffodilvarsity.edu.bd\n" +
                         "aupf2019@daffodil.university\n",
                 "Cell: +8801811458865\n" +
-                        "WhatsApp: +8801920012744\n")
+                        "WhatsApp: +8801920012744\n","01920012744")
         )
     }
 
@@ -96,14 +103,39 @@ class ContactUs : Fragment() {
             holder.designation.text = contactAdmin.designation.toString()
             holder.mail.text = contactAdmin.mail.toString()
             holder.cell.text = contactAdmin.cell.toString()
+            holder.layout.setOnClickListener {
+
+                whatsAppOpen(contactAdmin.whatsapp.toString())
+
+
+            }
+
         }
 
         inner class ContactHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            val avatar: ImageView = itemView.findViewById(R.id.admin_avatar)!!
+            val avatar: ImageView = itemView.findViewById(com.daffodil.varsity.aupf.R.id.admin_avatar)!!
             val name = itemView.findViewById<TextView>(R.id.name_of_admin)!!
             val designation = itemView.findViewById<TextView>(R.id.designation_of_admin)!!
             val mail = itemView.findViewById<TextView>(R.id.mail_of_admin)!!
             val cell = itemView.findViewById<TextView>(R.id.cell_of_admin)!!
+            val layout = itemView.findViewById<LinearLayout>(R.id.contact_us)!!
+
+        }
+
+    }
+
+    fun whatsAppOpen( num :String) {
+        val contact = "88"+num // use country code with your phone number
+        val url = "https://api.whatsapp.com/send?phone=$contact"
+        try {
+            val pm = context!!.packageManager
+            pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES)
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
+        } catch (e: PackageManager.NameNotFoundException) {
+            Toast.makeText(activity, "WhatsApp app not installed in your phone", Toast.LENGTH_SHORT).show()
+            e.printStackTrace()
         }
 
     }
