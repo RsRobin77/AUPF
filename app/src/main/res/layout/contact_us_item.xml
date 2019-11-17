@@ -10,7 +10,6 @@
     app:cardCornerRadius="8dp">
 
     <LinearLayout
-        android:id="@+id/contact_us"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -37,23 +36,49 @@
                 android:id="@+id/name_of_admin"
                 style="@style/TextAppearance.AppCompat.Large"
                 android:layout_width="wrap_content"
+                android:text="Name"
                 android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/designation_of_admin"
+                android:text="designation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/mail_of_admin"
+                android:text="mail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/cell_of_admin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cell_of_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="call"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call"
+                    android:drawableLeft="@drawable/ic_call"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
+
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

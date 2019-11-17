@@ -6,9 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,11 +13,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.GlideException
 import com.daffodil.varsity.aupf.R
 import com.daffodil.varsity.aupf.model.ContactAdmin
-import android.widget.Toast
 import android.content.pm.PackageManager
 import android.content.Intent
 
 import android.net.Uri
+import android.widget.*
 
 
 /**
@@ -103,7 +100,7 @@ class ContactUs : Fragment() {
             holder.designation.text = contactAdmin.designation.toString()
             holder.mail.text = contactAdmin.mail.toString()
             holder.cell.text = contactAdmin.cell.toString()
-            holder.layout.setOnClickListener {
+            holder.whatsApp.setOnClickListener {
 
                 whatsAppOpen(contactAdmin.whatsapp.toString())
 
@@ -118,7 +115,7 @@ class ContactUs : Fragment() {
             val designation = itemView.findViewById<TextView>(R.id.designation_of_admin)!!
             val mail = itemView.findViewById<TextView>(R.id.mail_of_admin)!!
             val cell = itemView.findViewById<TextView>(R.id.cell_of_admin)!!
-            val layout = itemView.findViewById<LinearLayout>(R.id.contact_us)!!
+            val whatsApp = itemView.findViewById<Button>(R.id.contact_us)!!
 
         }
 
