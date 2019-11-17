@@ -55,9 +55,9 @@ Adviser
 Bangladesh Skill Development Institute (BSDI)
 M +88- 01713-493206 | T+88-02- 8152105 
 W www.bsdi-bd.org | S kmhasan.ripon</string>
-    
+
     <string name="rathindra_nath_das">Executive Director,  DIPTI &amp; DTI</string>
-    <string name="textlink" >
+    <string name="textlink">
         \nFor more about  AUPF: <a href="http://www.aupf.net/">http://www.aupf.net/</a>
     </string>
     <string-array name="speakers_biography">
@@ -76,5 +76,8 @@ W www.bsdi-bd.org | S kmhasan.ripon</string>
         <item>@string/k_m_hasan_ripon</item>
         <item>@string/rathindra_nath_das</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

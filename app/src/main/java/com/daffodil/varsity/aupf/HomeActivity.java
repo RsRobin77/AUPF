@@ -25,6 +25,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.daffodil.varsity.aupf.fragment.About;
+import com.daffodil.varsity.aupf.fragment.CampusTiveTvFragment;
+import com.daffodil.varsity.aupf.fragment.NearbyFragment;
+import com.daffodil.varsity.aupf.fragment.RideServiceFragment;
 import com.daffodil.varsity.aupf.fragment.TimerUpComingFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapFragment;
 import com.daffodil.varsity.aupf.ui.fragment.ContactUs;
@@ -197,6 +200,26 @@ public class HomeActivity extends AppCompatActivity
                 case R.id.nav_gallery:
 
                     break;
+                case R.id.nav_nearby:
+                    if (getSupportActionBar() != null)
+                        getSupportActionBar().setTitle("Nearby");
+
+                    openFragment(new NearbyFragment(), "Nearby");
+                    break;
+
+                case R.id.nav_ride_service:
+                    if (getSupportActionBar() != null)
+                        getSupportActionBar().setTitle("Ride Service");
+
+                    openFragment(new RideServiceFragment(), "Ride Service");
+                    break;
+                case R.id.nav_campus_tv:
+                    if (getSupportActionBar() != null)
+                        getSupportActionBar().setTitle("Live Tv");
+
+                    openFragment(new CampusTiveTvFragment(), "Live Tv");
+                    break;
+
 
                 case R.id.nav_social_media:
                     Intent intent = new Intent();
@@ -205,6 +228,13 @@ public class HomeActivity extends AppCompatActivity
                     intent.setData(Uri.parse("http://aupf2019.daffodil.university/"));
                     startActivity(intent);
 
+                    break;
+
+                case R.id.nav_contact:
+                    if (getSupportActionBar() != null)
+                        getSupportActionBar().setTitle("Contact");
+
+                    openFragment(new ContactUs(), "contact_us");
                     break;
 
 //
