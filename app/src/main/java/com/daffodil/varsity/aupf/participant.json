@@ -1,0 +1,700 @@
+[
+  {
+    "SL": "1",
+    "Name": "Mr. Kazi Rafiqul Alam",
+    "Designation": "Chairman",
+    "Institute": "Ahsanullah University of Science and Technology",
+    "Country": "Bangladesh",
+    "Email": "dambgd@gmail.com",
+    "": ""
+  },
+  {
+    "SL": "2",
+    "Name": "Mr Sarwar Jahan",
+    "Designation": "Founder & Vice-president",
+    "Institute": "Southern University Bangladesh",
+    "Country": "Bangladesh",
+    "Email": "sjahan@southern.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "3",
+    "Name": "Mr. Abu Yousuf MD Abdullah",
+    "Designation": "Chairman",
+    "Institute": "Northern Uniiversity Bangladesh",
+    "Country": "Bangladesh",
+    "Email": "draymabdullah@yahoo.com",
+    "": ""
+  },
+  {
+    "SL": "4",
+    "Name": "Mr Dr. Dalem Ch Barman",
+    "Designation": "Vice Chancellor",
+    "Institute": "ASA University Bangladesh(ASAUB)",
+    "Country": "Bangladesh",
+    "Email": "vc@asaub.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "5",
+    "Name": "Ms. Ishrat Jahan",
+    "Designation": "Professor and Head of Business Administration",
+    "Institute": "Southern University Bangladesh",
+    "Country": "Bangladesh",
+    "Email": "info@southern.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "6",
+    "Name": "Prof. H M Jahirul Haque",
+    "Designation": " PhD",
+    "Institute": "Vice Chancellor",
+    "Country": "University of Liberal Arts Bangladesh (ULAB)",
+    "Email": "Bangladesh",
+    "": ""
+  },
+  {
+    "SL": "7",
+    "Name": "Dr. Milan Pagon",
+    "Designation": "Vice Chancellor (acting)",
+    "Institute": "Independent University of Bangladesh ",
+    "Country": "Bangladesh",
+    "Email": "mpagon@iub.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "8",
+    "Name": "Mr. Khandker MD Iftekhar Haider",
+    "Designation": "Treasurer ",
+    "Institute": "Independent University of Bangladesh ",
+    "Country": "Bangladesh",
+    "Email": "haider@iub.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "9",
+    "Name": "Mr. Muhammad Anwarul Islam ",
+    "Designation": "Registrar ",
+    "Institute": "Independent University of Bangladesh",
+    "Country": "Bangladesh",
+    "Email": "anwar2242@gmail.com",
+    "": ""
+  },
+  {
+    "SL": "10",
+    "Name": "Prof. Jude William R.Genilo ",
+    "Designation": " Professor & Head",
+    "Institute": "University of Liberal Arts Bangladesh (ULAB)",
+    "Country": "Bangladesh",
+    "Email": "jude.genilo@ulab.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "11",
+    "Name": "Mr. KBM MOIN UDDIN CHISTY",
+    "Designation": "President",
+    "Institute": "Victoria University of Bangladesh",
+    "Country": "Bangladesh",
+    "Email": " chisty_vub@yahoo.com",
+    "": ""
+  },
+  {
+    "SL": "12",
+    "Name": "Professor Dr. Lutful Hasdan",
+    "Designation": "Vice Chancellor",
+    "Institute": "Bangladesh Agricultural University",
+    "Country": "Bangladesh",
+    "Email": "shrionsong@gmail.com",
+    "": ""
+  },
+  {
+    "SL": "13",
+    "Name": "Prof. Dr. Nazmul Karim Chowdhury",
+    "Designation": "Vice Chancellor",
+    "Institute": "Fareast International University",
+    "Country": "Bangladesh",
+    "Email": "vc@fiu.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "14",
+    "Name": "Mr. Md. Monjur-E-Khoda Tarafdar",
+    "Designation": "Treasurer ",
+    "Institute": "Fareast International University",
+    "Country": "Bangladesh",
+    "Email": "treasurer@fiu.edu.bd",
+    "": ""
+  },
+  {
+    "SL": "15",
+    "Name": "Prof. Dr. Md. Nural Anwar",
+    "Designation": "VC",
+    "Institute": "Port City International University",
+    "Country": "Bangladesh",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "16",
+    "Name": "Md. Obaydur Rahman",
+    "Designation": "Registrar",
+    "Institute": "Port City International University",
+    "Country": "Bangladesh",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "17",
+    "Name": "Md. Abdul Hye Babu."
+  },
+  {
+    "SL": "",
+    "Name": "Director. (Planing & Devt. Division)"
+  },
+  {
+    "SL": "",
+    "Name": "Bangladesh Open University",
+    "Designation": "Bangladesh",
+    "Institute": "",
+    "Country": "",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "18",
+    "Name": "Prof. Abdul Mannan Choudhury",
+    "Designation": " Ph.D.",
+    "Institute": "Vice Chancellor & Founder",
+    "Country": "World University of Bangladesh ",
+    "Email": "Bangladesh",
+    "": ""
+  },
+  {
+    "SL": "19",
+    "Name": "Professor Musfiq M. Choudhury",
+    "Designation": "PHDCHAIRMAN (ACTING)",
+    "Institute": " BOARD OF TRUSTEES",
+    "Country": "World University of Bangladesh ",
+    "Email": "Bangladesh",
+    "": ""
+  },
+  {
+    "SL": "20",
+    "Name": "Prof. Dr. M. Nurul Islam",
+    "Designation": "PRO-VICE CHANCELLOR",
+    "Institute": "World University of Bangladesh ",
+    "Country": "Bangladesh",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "21",
+    "Name": "Prof. Jinbo Lin",
+    "Designation": "Assistant Director",
+    "Institute": "Chaoshan College",
+    "Country": " Guangdong",
+    "Email": " China",
+    "": ""
+  },
+  {
+    "SL": "22",
+    "Name": "Dr. Shaoyou Ji",
+    "Designation": "President",
+    "Institute": "Chaoshan College",
+    "Country": " Guangdong",
+    "Email": " China",
+    "": ""
+  },
+  {
+    "SL": "23",
+    "Name": "Mr. Zhiqin Wu",
+    "Designation": "Vice Director",
+    "Institute": "Chaoshan College",
+    "Country": " Guangdong",
+    "Email": " China",
+    "": ""
+  },
+  {
+    "SL": "24",
+    "Name": "Mr. Mingying Zhuang",
+    "Designation": "Honorary President",
+    "Institute": "Chaoshan College",
+    "Country": " Guangdong",
+    "Email": " China",
+    "": ""
+  },
+  {
+    "SL": "25",
+    "Name": "Mr. Weidao Zhang",
+    "Designation": "Vice President",
+    "Institute": "Chaoshan College",
+    "Country": " Guangdong",
+    "Email": " China",
+    "": ""
+  },
+  {
+    "SL": "26",
+    "Name": "Mr Wenting Shuang",
+    "Designation": "Dean",
+    "Institute": "Wuhan University of Science and Technology",
+    "Country": "China",
+    "Email": "wtshuang@wust.edu.cn",
+    "": ""
+  },
+  {
+    "SL": "27",
+    "Name": "Mr Jiwei Shen",
+    "Designation": "Vice President",
+    "Institute": "Wuhan University of Science and Technology",
+    "Country": "China",
+    "Email": "54294141@qq.com",
+    "": ""
+  },
+  {
+    "SL": "28",
+    "Name": " Mr. Xue Zhengliang ",
+    "Designation": "Co-Dean of School of Materials and Metallurgy",
+    "Institute": "Wuhan University of Science and Technology",
+    "Country": "China",
+    "Email": "shuangwenting@wust.edu.cn",
+    "": ""
+  },
+  {
+    "SL": "29",
+    "Name": "Ms. Lu LU",
+    "Designation": "Vice Director",
+    "Institute": "Guangdong University of Foreign Studies",
+    "Country": "China",
+    "Email": "201110037@oamail.gdufs.edu.cn",
+    "": ""
+  },
+  {
+    "SL": "30",
+    "Name": "Mr. Ming LIU",
+    "Designation": "Vice Dean",
+    "Institute": "Guangdong University of Foreign Studies",
+    "Country": "China",
+    "Email": "199710573@oamail.gdufs.edu.cn",
+    "": ""
+  },
+  {
+    "SL": "31",
+    "Name": "Ms. Mengqi LU",
+    "Designation": "Teaching assistant",
+    "Institute": "Guangdong University of Foreign Studies",
+    "Country": "China",
+    "Email": "201910063@oamail.gdufs.edu.cn",
+    "": ""
+  },
+  {
+    "SL": "32",
+    "Name": "Prof. Xie Wei",
+    "Designation": "Dean",
+    "Institute": "Nanchang University",
+    "Country": "China",
+    "Email": "xiewei@ncu.edu.cn",
+    "": ""
+  },
+  {
+    "SL": "33",
+    "Name": "Mr Chengping Jiang",
+    "Designation": "Deputy President",
+    "Institute": "Nanchang University",
+    "Country": "China",
+    "Email": "xieweixw2000@yahoo.com",
+    "": ""
+  },
+  {
+    "SL": "34",
+    "Name": "Prof. YONG KONG",
+    "Designation": "Vice Director",
+    "Institute": "Zhejiang Yuexiu University of Foreign Languages",
+    "Country": "China",
+    "Email": "254058002@qq.com",
+    "": ""
+  },
+  {
+    "SL": "35",
+    "Name": "Prof. YONGBO ZHANG",
+    "Designation": "Vice President",
+    "Institute": "Zhejiang Yuexiu University of Foreign Languages",
+    "Country": "China",
+    "Email": "zyu_iccd@163.com",
+    "": ""
+  },
+  {
+    "SL": "36",
+    "Name": "Dr. GOVINDASAMY VISWANATHAN",
+    "Designation": "FOUNDER-CHANCELLOR",
+    "Institute": "Vellore Institute of Technology",
+    "Country": "India",
+    "Email": "chancellor@vit.ac.in",
+    "": ""
+  },
+  {
+    "SL": "37",
+    "Name": "Mr. Vijayakumar Chandrasekaran",
+    "Designation": "Director of International office",
+    "Institute": "Vellore Institute of Technology",
+    "Country": "India",
+    "Email": "vijay@vit.ac.in",
+    "": ""
+  },
+  {
+    "SL": "38",
+    "Name": "Mr Sankar Viswanathan",
+    "Designation": "Vice President",
+    "Institute": "Vellore Institute of Technology",
+    "Country": "India",
+    "Email": "sankar@vit.ac.in",
+    "": ""
+  },
+  {
+    "SL": "39",
+    "Name": "Dr. Brijesh Nair Achuthan Nair Nalinakumari",
+    "Designation": "Assistant Director",
+    "Institute": "Vellore Institute of Technology",
+    "Country": "India",
+    "Email": "brijeshnair.an@vit.ac.in",
+    "": ""
+  },
+  {
+    "SL": "40",
+    "Name": "Prof. Hiranya Kumar Das",
+    "Designation": "Pro Vice Chancellor",
+    "Institute": "Assam down town University",
+    "Country": "India",
+    "Email": "hkdas1964@gmail.com",
+    "": ""
+  },
+  {
+    "SL": "41",
+    "Name": "Dr. Parimal Chandra Biswas",
+    "Designation": "Professor",
+    "Institute": " School of Management"
+  },
+  {
+    "SL": "Dean",
+    "Name": " Students Affairs and International Relations",
+    "Designation": "Adamas University",
+    "Institute": "India",
+    "Country": "parimalchandrabiswas@adamasuniversity.ac.in",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "42",
+    "Name": "Ms. Oleksandra Biswas",
+    "Designation": "",
+    "Institute": "",
+    "Country": "India",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "43",
+    "Name": "Prof. Samit Ray",
+    "Designation": "Chancellor",
+    "Institute": "Adamas University",
+    "Country": "India",
+    "Email": "samitray6@gmail.com",
+    "": ""
+  },
+  {
+    "SL": "44",
+    "Name": "Mr. Debraj Pradhan ",
+    "Designation": "Director General- International Relations",
+    "Institute": "KIIT University",
+    "Country": "India",
+    "Email": " internationaloffice@kiit.ac.in",
+    "": ""
+  },
+  {
+    "SL": "45",
+    "Name": " Anjali Das",
+    "Designation": "",
+    "Institute": "",
+    "Country": "India",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "46",
+    "Name": "Mr. Meghdut Roychowdhury",
+    "Designation": "Director",
+    "Institute": " Global Operations",
+    "Country": " Techno India University",
+    "Email": "India",
+    "": ""
+  },
+  {
+    "SL": "47",
+    "Name": "Mr. Erning Wihardjo",
+    "Designation": "Rector",
+    "Institute": "Krida Wacana Christian University (UKRIDA)",
+    "Country": "Indonesia",
+    "Email": "erning.wihardjo@ukrida.ac.id",
+    "": ""
+  },
+  {
+    "SL": "48",
+    "Name": "Ms. Lanny Susanty",
+    "Designation": "Head of Collaboration Division",
+    "Institute": "Petra Christian University",
+    "Country": "Indonesia",
+    "Email": "domrel@petra.ac.id",
+    "": ""
+  },
+  {
+    "SL": "49",
+    "Name": "Mr. Djwantoro Hardjito",
+    "Designation": "Rector",
+    "Institute": "Petra Christian University",
+    "Country": "Indonesia",
+    "Email": "rector@petra.ac.id",
+    "": ""
+  },
+  {
+    "SL": "50",
+    "Name": "Mr. Agung Herwi Bantara",
+    "Designation": "Secretary",
+    "Institute": "Petra Christian University",
+    "Country": "Indonesia",
+    "Email": "herwi@petra.ac.id",
+    "": ""
+  },
+  {
+    "SL": "51",
+    "Name": "Prof. Marniati ",
+    "Designation": "Rector",
+    "Institute": "University of Ubudiyah Indonesia",
+    "Country": "Indonesia",
+    "Email": "marniati@uui.ac.id",
+    "": ""
+  },
+  {
+    "SL": "52",
+    "Name": "Mr Dedi Zefrizal",
+    "Designation": "Chairman",
+    "Institute": "University of Ubudiyah Indonesia",
+    "Country": "Indonesia",
+    "Email": "info@uui.ac.id",
+    "": ""
+  },
+  {
+    "SL": "53",
+    "Name": "Ms. Riana Permatasari",
+    "Designation": "Head",
+    "Institute": "Universitas Islam Sultan Agung",
+    "Country": "Indonesia",
+    "Email": "international@unissula.ac.id",
+    "": ""
+  },
+  {
+    "SL": "54",
+    "Name": "Dr. Bedjo Santoso",
+    "Designation": "Vice Rector of Academic and Collaboration Affairs",
+    "Institute": "Universitas Islam Sultan Agung",
+    "Country": "Indonesia",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "55",
+    "Name": "Dr. Hendar Hender",
+    "Designation": "Vice Dean",
+    "Institute": "Universitas Islam Sultan Agung",
+    "Country": "Indonesia",
+    "Email": "hendar@unissula.ac.id",
+    "": ""
+  },
+  {
+    "SL": "56",
+    "Name": "Mr Khoirul Fuad",
+    "Designation": "Head of Dyploma Accounting Department",
+    "Institute": "Universitas Islam Sultan Agung",
+    "Country": "Indonesia",
+    "Email": "khoirulfuad@unissula.ac.id",
+    "": ""
+  },
+  {
+    "SL": "57",
+    "Name": "Mr. Yudi Sutarso",
+    "Designation": "Rector",
+    "Institute": "STIE Perbanas Surabaya",
+    "Country": "Indonesia",
+    "Email": "yudi@perbanas.ac.id",
+    "": ""
+  },
+  {
+    "SL": "58",
+    "Name": "Dr. ROVILA EL MAGHVIROH",
+    "Designation": "HEAD OF INTERNATIONAL AFFAIRS",
+    "Institute": "STIE Perbanas Surabaya",
+    "Country": "Indonesia",
+    "Email": "rovila@perbanas.ac.id",
+    "": ""
+  },
+  {
+    "SL": "59",
+    "Name": "Ms. Lidia Sandra",
+    "Designation": " Expert Staff to the Rector",
+    "Institute": "Krida Wacana Christian University (UKRIDA)",
+    "Country": "Indonesia",
+    "Email": " lidia.sandra@ukrida.ac.id",
+    "": ""
+  },
+  {
+    "SL": "60",
+    "Name": "Prof. Ahmad Reza Bahrami",
+    "Designation": "Vice-President for Research and Technology",
+    "Institute": "Ferdowsi University of Mashhad",
+    "Country": "Iran",
+    "Email": " ar-bahrami@um.ac.ir",
+    "": ""
+  },
+  {
+    "SL": "61",
+    "Name": "Prof. Dr. Regina Valutytė",
+    "Designation": "Vice-Rector for Academic Affairs",
+    "Institute": "Mykolas Romeris University",
+    "Country": "Lithuania",
+    "Email": "r.valutyte@mruni.eu",
+    "": ""
+  },
+  {
+    "SL": "62",
+    "Name": "Prof. SALLEH ABD RASHID",
+    "Designation": "Director",
+    "Institute": "Universiti Malaysia Perlis",
+    "Country": "Malaysia",
+    "Email": "salleh@unimap.edu.my",
+    "": ""
+  },
+  {
+    "SL": "63",
+    "Name": "Prof. Rezuwan Kamaruddin",
+    "Designation": "Deputy Vice Chancellor (Academic & International)",
+    "Institute": "Universiti Malaysia Perlis",
+    "Country": "Malaysia",
+    "Email": "rezuwan@unimap.edu.my",
+    "": ""
+  },
+  {
+    "SL": "64",
+    "Name": "Dr. Zenaida Reyes",
+    "Designation": "Vice President for University Relations and Advancement",
+    "Institute": "Philippine Normal University",
+    "Country": "Philippines",
+    "Email": "reyes.zq@pnu.edu.ph",
+    "": ""
+  },
+  {
+    "SL": "65",
+    "Name": " MS. CAMILLE AUREA T. REZONABLE",
+    "Designation": "Admission Officer",
+    "Institute": "Panpacific University",
+    "Country": "Philippines",
+    "Email": "rezonable.camille@panpacificu.edu.ph",
+    "": ""
+  },
+  {
+    "SL": "66",
+    "Name": "MISS. MADELEINE PATRICIA P. CRUZ",
+    "Designation": "Deputy Head",
+    "Institute": "Panpacific University",
+    "Country": "Philippines",
+    "Email": " cruz.madeleine@panpacificu.edu.ph",
+    "": ""
+  },
+  {
+    "SL": "67",
+    "Name": "Dr. Gina Lee Santos",
+    "Designation": "Director Quality Assurance",
+    "Institute": "Panpacific University",
+    "Country": "Philippines",
+    "Email": "ginalee.punp@gmail.com",
+    "": ""
+  },
+  {
+    "SL": "68",
+    "Name": "Prof. Dr. hab. C. Eng. Janusz Szpytko",
+    "Designation": "Professor; UNESCO AGH Chairholder",
+    "Institute": "AGH University of Science and Technology Krakow",
+    "Country": "Poland",
+    "Email": "szpytko@agh.edu.pl",
+    "": ""
+  },
+  {
+    "SL": "69",
+    "Name": "Ms. Danuta Anita Wozniak",
+    "Designation": "",
+    "Institute": "",
+    "Country": "Poland",
+    "Email": "",
+    "": ""
+  },
+  {
+    "SL": "70",
+    "Name": "Dr. Jekuk Chang",
+    "Designation": "President",
+    "Institute": "Dongseo University",
+    "Country": "South korea",
+    "Email": "jchang@dongseo.ac.kr",
+    "": ""
+  },
+  {
+    "SL": "71",
+    "Name": "Prof. Kyongho Hahn",
+    "Designation": "Dean",
+    "Institute": "Dongseo University",
+    "Country": "South korea",
+    "Email": "khahn@dongseo.ac.kr",
+    "": ""
+  },
+  {
+    "SL": "72",
+    "Name": "Ms. Jeonghee Kim",
+    "Designation": "Director",
+    "Institute": "Dongseo University",
+    "Country": "South korea",
+    "Email": "international@dongseo.ac.kr",
+    "": ""
+  },
+  {
+    "SL": "73",
+    "Name": "Mr. Ching-Pu Chen Chen",
+    "Designation": "Chief Global Officer",
+    "Institute": "Yuan Ze University",
+    "Country": "Taiwan",
+    "Email": "chingpu@saturn.yzu.edu.tw",
+    "": ""
+  },
+  {
+    "SL": "74",
+    "Name": "Dr. Panadda Unyapho",
+    "Designation": "Director",
+    "Institute": "Bangkok University",
+    "Country": "Thailand",
+    "Email": "panadda.u@bu.ac.th",
+    "": ""
+  },
+  {
+    "SL": "75",
+    "Name": "Dr. Mathana Santiwat",
+    "Designation": "Vice Chairman of the Board of Trustees",
+    "Institute": "Bangkok University",
+    "Country": "Thailand",
+    "Email": "mathana.s@bu.ac.th",
+    "": ""
+  },
+  {
+    "SL": "76",
+    "Name": "Mr. ALTUNTAS BAYBARS",
+    "Designation": "Chairman ",
+    "Institute": "World Business Angels Investment Forum (WBAF)",
+    "Country": "Turkey",
+    "Email": "",
+    "": ""
+  }
+]

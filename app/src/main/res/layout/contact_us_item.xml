@@ -36,20 +36,20 @@
                 android:id="@+id/name_of_admin"
                 style="@style/TextAppearance.AppCompat.Large"
                 android:layout_width="wrap_content"
-                android:text="Name"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Name" />
 
             <TextView
                 android:id="@+id/designation_of_admin"
-                android:text="designation"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="designation" />
 
             <TextView
                 android:id="@+id/mail_of_admin"
-                android:text="mail"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="mail" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -59,21 +59,20 @@
                     android:id="@+id/cell_of_admin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:text="call"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/contact_us"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Call"
                     android:drawableLeft="@drawable/ic_call"
+                    android:text="Call"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/cell_of_admin" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

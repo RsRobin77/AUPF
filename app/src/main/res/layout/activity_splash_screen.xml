@@ -56,14 +56,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="40dp"
-            android:padding="24dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/loading_animation_gif" />
+<!--        <pl.droidsonroids.gif.GifImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="40dp"-->
+<!--            android:padding="24dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/loading_animation_gif" />-->
 
 
     </RelativeLayout>

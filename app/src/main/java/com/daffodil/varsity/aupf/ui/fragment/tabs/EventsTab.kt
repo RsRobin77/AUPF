@@ -12,14 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.daffodil.varsity.aupf.R
 import room.database.events.DailyEvent
 import room.database.events.EventAdapter
-import room.database.events.EventViewModel
+import room.database.CarnivalViewModel
 
 private const val DAY = "param1"
 
 class EventsTab : Fragment() {
 
     private var day: String? = null
-    private lateinit var eventViewModel: EventViewModel
+    private lateinit var carnivalViewModel: CarnivalViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +32,9 @@ class EventsTab : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
 
-        eventViewModel = ViewModelProviders.of(this).get(EventViewModel::class.java)
+        carnivalViewModel = ViewModelProviders.of(this).get(CarnivalViewModel::class.java)
 
-        eventViewModel.getAllEvents(day).observe(this, Observer {
+        carnivalViewModel.getAllEvents(day).observe(this, Observer {
             val eventAdapter = EventAdapter()
             eventAdapter.submitList(it)
             val recyclerView = view!!.findViewById<RecyclerView>(R.id.recycler_view)
@@ -79,7 +79,7 @@ class EventsTab : Fragment() {
         val day = "day1"
 
         for (i in eventName.indices)
-            eventViewModel.insert(DailyEvent(day, startTime[i].trim(), endTime[i].trim(), eventName[i].trim()))
+            carnivalViewModel.insert(DailyEvent(day, startTime[i].trim(), endTime[i].trim(), eventName[i].trim()))
     }
 
     private fun day2() {
@@ -90,7 +90,7 @@ class EventsTab : Fragment() {
                         "12:00" ,
                         "13:30" ,
                         "15:30" ,
-                        "17:30"
+                        "18.30"
         )
 
         val endTime = arrayOf(
@@ -100,7 +100,7 @@ class EventsTab : Fragment() {
                         "13:30\n" ,
                         "15:00\n" ,
                         "17:00\n" ,
-                        "19:30\n"
+                        "21.00\n"
         )
 
         val eventName = arrayOf(
@@ -115,7 +115,7 @@ class EventsTab : Fragment() {
         val day = "day2"
 
         for (i in eventName.indices)
-            eventViewModel.insert(DailyEvent(day, startTime[i].trim(), endTime[i].trim(), eventName[i].trim()))
+            carnivalViewModel.insert(DailyEvent(day, startTime[i].trim(), endTime[i].trim(), eventName[i].trim()))
     }
 
     private fun day3() {
@@ -147,7 +147,7 @@ class EventsTab : Fragment() {
 
 
         for (i in eventName.indices)
-            eventViewModel.insert(DailyEvent(day, startTime[i].trim(), endTime[i].trim(), eventName[i].trim()))
+            carnivalViewModel.insert(DailyEvent(day, startTime[i].trim(), endTime[i].trim(), eventName[i].trim()))
     }
 
     companion object {

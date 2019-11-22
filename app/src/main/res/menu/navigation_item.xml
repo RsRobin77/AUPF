@@ -17,12 +17,21 @@
             android:icon="@drawable/ic_event"
             android:title="AUPF Calender" />
 
+        <item
+            android:id="@+id/bottom_nav_participant"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Participant" />
 
         <item
-            android:visible="false"
+            android:id="@+id/nav_brochure"
+            android:icon="@drawable/ic_brochure"
+            android:title="Brochure" />
+
+        <item
             android:id="@+id/nav_volunteer"
             android:icon="@drawable/ic_volunteers_list"
-            android:title="Volunteers" />
+            android:title="Volunteers"
+            android:visible="false" />
 
         <item
             android:id="@+id/nav_gallery"
@@ -33,8 +42,7 @@
         <item
             android:id="@+id/nav_nearby"
             android:icon="@drawable/ic_near_me_black_24dp"
-            android:title="Nearby"
-            />
+            android:title="Nearby" />
         <item
             android:id="@+id/nav_ride_service"
             android:icon="@drawable/ride_service"
@@ -43,8 +51,7 @@
         <item
             android:id="@+id/nav_campus_tv"
             android:icon="@drawable/ic_live_tv_black_24dp"
-            android:title="Live Campus Tv"
-            />
+            android:title="Live Campus Tv" />
 
 
         <item

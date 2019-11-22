@@ -25,8 +25,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.daffodil.varsity.aupf.fragment.About;
+import com.daffodil.varsity.aupf.fragment.BrochureFragment;
 import com.daffodil.varsity.aupf.fragment.CampusTiveTvFragment;
 import com.daffodil.varsity.aupf.fragment.NearbyFragment;
+import com.daffodil.varsity.aupf.fragment.ParticipantFragment;
 import com.daffodil.varsity.aupf.fragment.RideServiceFragment;
 import com.daffodil.varsity.aupf.fragment.TimerUpComingFragment;
 import com.daffodil.varsity.aupf.fragment.VenueMapFragment;
@@ -230,18 +232,25 @@ public class HomeActivity extends AppCompatActivity
 
                     break;
 
-                case R.id.nav_contact:
+                case R.id.nav_brochure:
                     if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Contact");
+                        getSupportActionBar().setTitle("Brochure");
 
-                    openFragment(new ContactUs(), "contact_us");
+                    openFragment(new BrochureFragment(), "Brochure");
                     break;
-
 
 
                 /**Navigation drawer item segment ends here..*/
 
                 /**bottom navigation item segment starts from here*/
+                case R.id.nav_contact:
+
+                case R.id.bottom_nav_contact_us:
+                    if (getSupportActionBar() != null)
+                        getSupportActionBar().setTitle("Contact");
+
+                    openFragment(new ContactUs(), "contact_us");
+                    break;
 
                 case R.id.bottom_nav_dashboard:
                     if (getSupportActionBar() != null)
@@ -260,11 +269,11 @@ public class HomeActivity extends AppCompatActivity
                     openFragment(new VenueMapFragment(), "map");
                     break;
 
-                case R.id.bottom_nav_contact_us:
+                case R.id.bottom_nav_participant:
                     if (getSupportActionBar() != null)
-                        getSupportActionBar().setTitle("Contact");
+                        getSupportActionBar().setTitle("Participants");
 
-                    openFragment(new ContactUs(), "contact_us");
+                    openFragment(new ParticipantFragment(), "participant");
                     break;
 
                 /**bottom navigation item segment ends here*/

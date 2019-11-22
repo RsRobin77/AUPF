@@ -11,10 +11,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.daffodil.varsity.aupf.R
-import com.daffodil.varsity.aupf.ui.fragment.tabs.EventsTab
 import com.daffodil.varsity.aupf.ui.fragment.tabs.NearbyTabs
 import com.google.android.material.tabs.TabLayout
-import room.database.events.EventViewModel
 
 /**
  * A simple [Fragment] subclass.

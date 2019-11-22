@@ -60,4 +60,9 @@ dependencies {
     //show more textview
     implementation 'com.borjabravo:readmoretextview:2.1.0'
 
+    //gson
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //pdf viewer
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }

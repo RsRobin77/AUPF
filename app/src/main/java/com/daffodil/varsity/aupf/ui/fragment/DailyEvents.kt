@@ -9,24 +9,18 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import com.daffodil.varsity.aupf.R
 import com.daffodil.varsity.aupf.ui.fragment.tabs.EventsTab
 import com.google.android.material.tabs.TabLayout
-import room.database.events.DailyEvent
-import room.database.events.EventAdapter
-import room.database.events.EventViewModel
+import room.database.CarnivalViewModel
 
 
 /**
  * A [Fragment] of Daily Event lists. Where the list of events in a day will be shown here.
  */
 class DailyEvents : Fragment() {
-    private lateinit var eventViewModel: EventViewModel
+    private lateinit var carnivalViewModel: CarnivalViewModel
 
     private lateinit var rootView:View
 

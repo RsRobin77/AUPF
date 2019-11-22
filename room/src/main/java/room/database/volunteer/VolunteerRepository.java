@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 import room.database.CarnivalDao;
+import room.database.CarnivalDatabase;
 
 public class VolunteerRepository {
 
@@ -15,7 +16,7 @@ public class VolunteerRepository {
     private LiveData<List<Volunteer>> allVolunteers;
 
     public VolunteerRepository(Application application) {
-        VolunteerDatabase database = VolunteerDatabase.getInstance(application);
+        CarnivalDatabase database = CarnivalDatabase.getInstance(application);
         carnivalDao = database.carnivalDao();
         allVolunteers = carnivalDao.getAllVolunteers();
 

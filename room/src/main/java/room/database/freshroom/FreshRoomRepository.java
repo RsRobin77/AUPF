@@ -8,13 +8,14 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 import room.database.CarnivalDao;
+import room.database.CarnivalDatabase;
 
 public class FreshRoomRepository {
     private CarnivalDao carnivalDao;
     private LiveData<List<FreshRoom>> freshRoomList;
 
     FreshRoomRepository(Application application){
-        FreshRoomDatabase database = FreshRoomDatabase.getInstance(application);
+        CarnivalDatabase database = CarnivalDatabase.getInstance(application);
         carnivalDao = database.carnivalDao();
         freshRoomList = carnivalDao.getAllFreshRooms();
     }
