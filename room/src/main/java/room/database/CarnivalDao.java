@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
@@ -21,7 +22,7 @@ public interface CarnivalDao {
      * ALSO CAN DELETE ALL THE VOLUNTEER OR CAN GET LIST OF THE VOLUNTEER.
      */
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertVolunteer(Volunteer volunteer);
 
     @Update
@@ -40,7 +41,7 @@ public interface CarnivalDao {
     /**
      * THIS IS THE [FRESH ROOM] DAO SECTION. WHERE THE FRESH ROOM CAN BE ADD,REMOVE AND GET ALL THE ROOM LISTS
      */
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertFreshRoom(FreshRoom freshRoom);
 
     @Query("DELETE FROM fresh_room")
@@ -54,7 +55,7 @@ public interface CarnivalDao {
      * The query is for different day wise programs.
      */
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertDailyEvents(DailyEvent dailyEvent);
 
     @Query("DELETE FROM daily_event")
