@@ -35,11 +35,11 @@ public class ParticipantAdapter extends RecyclerView.Adapter<ParticipantAdapter.
     public void onBindViewHolder(@NonNull ParticipantHolder holder, int position) {
         Participant participant = participantArrayList.get(position);
 
-        holder.Name.setText(participant.getName().trim());
-        holder.Designation.setText(participant.getDesignation().trim());
-        holder.Institute.setText("Institute: " + participant.getInstitute().trim());
-        holder.Country.setText("Country: " + participant.getCountry().trim());
-        holder.Email.setText("Email: " + participant.getEmail().trim());
+        holder.Name.setText(participant.getName());
+        holder.Designation.setText(participant.getDesignation());
+        holder.Institute.setText("Institute: " + participant.getInstitute());
+        holder.Country.setText("Country: " + participant.getCountry());
+        holder.Email.setText("Email: " + participant.getEmail());
     }
 
     @Override
